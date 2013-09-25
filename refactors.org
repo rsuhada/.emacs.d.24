@@ -1,0 +1,23 @@
+(defun ido-recentf-open ()
+  "Use `ido-completing-read' to \\[find-file] a recent file"
+  (interactive)
+  (if (find-file (ido-completing-read "Find recent file: " recentf-list))
+      (message "Opening file...")
+    (message "Aborting")))
+
+(global-set-key "\C-x\ \C-r" 'ido-recentf-open)
+
+
+
+
+# test and add if needed:
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; lowcase (builtin doesn't work?)
+
+;; (defun lowcase ()
+;;   (interactive)
+;;   (save-excursion
+;;     (goto-char (point-min))
+;;     (while (re-search-forward ".+" nil t)
+;;       (replace-match (downcase (match-string 0)) t))))
+
