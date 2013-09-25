@@ -13,9 +13,6 @@
 
 (global-set-key (kbd "C-a") 'back-to-indentation-or-beginning) ;; was move-beginning-of-line
 
-;; Find matching parens
-(global-set-key (kbd "C-'") 'goto-match-paren)
-
 ;; ibuffer > list-buffers
 (global-set-key (kbd "C-x b") 'ibuffer)
 ;; (global-set-key (kbd "C-x C-b") 'switch-to-buffer)

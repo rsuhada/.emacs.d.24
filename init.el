@@ -39,16 +39,31 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; load in setups from files
 
+;; fundamets
 (load "~/.emacs.d/settings/bindings")
 (load "~/.emacs.d/settings/global")
 (load "~/.emacs.d/settings/utils")
+(load "~/.emacs.d/settings/paths")
+(load "~/.emacs.d/settings/tab")
+(load "~/.emacs.d/settings/modes.el")
+(load "~/.emacs.d/settings/abbrev.el")
+
+;; appearance
 (load "~/.emacs.d/settings/windows")
 (load "~/.emacs.d/settings/mode-line")
 (load "~/.emacs.d/settings/appearance")
+
+;; built-in tools settings
+(load "~/.emacs.d/settings/ibuffer")
+(load "~/.emacs.d/settings/occur")
+(load "~/.emacs.d/settings/macros")
 (load "~/.emacs.d/settings/dired")
-(load "~/.emacs.d/settings/paths")
 (load "~/.emacs.d/settings/tags")
 (load "~/.emacs.d/settings/tramp")
+
+;; package settings
+(load "~/.emacs.d/settings/ido")
+(load "~/.emacs.d/settings/org")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; working but not used

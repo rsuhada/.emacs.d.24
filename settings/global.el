@@ -45,10 +45,6 @@
 (setq-default initial-scratch-message nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; new modes
-(add-to-list 'auto-mode-alist '("\\.zsh\\'" . shell-script-mode))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; set transient mark mode (needed for hippie-expand/smart tab)
 
 (setq transient-mark-mode t)
@@ -92,13 +88,6 @@
 ;; frame title
 
 (setq frame-title-format '("%f"))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; cursor
-
-(setq-default cursor-type 'bar)         ; defult: box
-(setq default-frame-alist
-  '((cursor-color . "brown3")))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; emerge setting
@@ -188,3 +177,8 @@
 (global-set-key (kbd "\"") 'skeleton-pair-insert-maybe)
 (global-set-key (kbd "\'") 'skeleton-pair-insert-maybe)
 
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; cua for rectangles
+
+(setq cua-enable-cua-keys nil) ;; only for rectangles
+(cua-mode t)
