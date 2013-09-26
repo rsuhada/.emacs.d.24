@@ -1,0 +1,14 @@
+######################################################################
+#
+# list of packages installed via elpa/melpa/marmelade
+#
+######################################################################
+
+
+* Installed
+- yasnippet
+- ace-jump
+
+
+* To-be installed
+** TODO yasnippet personal snippets

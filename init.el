@@ -28,7 +28,7 @@
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run server
-(if (not (server-mode)) (server-start))
+;; (if (not (server-mode)) (server-start))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; misc. options
@@ -39,36 +39,37 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; load in setups from files
 
-;; fundamets
-(load "~/.emacs.d/settings/bindings")
-(load "~/.emacs.d/settings/global")
-(load "~/.emacs.d/settings/utils")
-(load "~/.emacs.d/settings/paths")
-(load "~/.emacs.d/settings/tab")
+;; fundametals
+(load "~/.emacs.d/settings/bindings.el")
+(load "~/.emacs.d/settings/global.el")
+(load "~/.emacs.d/settings/utils.el")
+(load "~/.emacs.d/settings/paths.el")
+(load "~/.emacs.d/settings/tab.el")
 (load "~/.emacs.d/settings/modes.el")
 (load "~/.emacs.d/settings/abbrev.el")
 
 ;; appearance
-(load "~/.emacs.d/settings/windows")
-(load "~/.emacs.d/settings/mode-line")
-(load "~/.emacs.d/settings/appearance")
+(load "~/.emacs.d/settings/windows.el")
+(load "~/.emacs.d/settings/mode-line.el")
+(load "~/.emacs.d/settings/appearance.el")
 
 ;; built-in tools settings
-(load "~/.emacs.d/settings/ibuffer")
-(load "~/.emacs.d/settings/occur")
-(load "~/.emacs.d/settings/macros")
-(load "~/.emacs.d/settings/dired")
-(load "~/.emacs.d/settings/tags")
-(load "~/.emacs.d/settings/tramp")
+(load "~/.emacs.d/settings/ibuffer.el")
+(load "~/.emacs.d/settings/occur.el")
+(load "~/.emacs.d/settings/macros.el")
+(load "~/.emacs.d/settings/dired.el")
+(load "~/.emacs.d/settings/tags.el")
+(load "~/.emacs.d/settings/tramp.el")
+(load "~/.emacs.d/settings/ido.el")
+(load "~/.emacs.d/settings/org.el")
 
-;; package settings
-(load "~/.emacs.d/settings/ido")
-(load "~/.emacs.d/settings/org")
+;; packages
+(load "~/.emacs.d/packages.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; working but not used
 
-;; (load "~/.emacs.d/settings/irc")
+;; (load "~/.emacs.d/settings/irc.el")
 
 
 
@@ -150,4 +151,3 @@
 ;;   ;; If there is more than one, they won't work right.
 ;;  '(default ((t (:inherit nil :stipple nil :background "#121212" :foreground "#dcdccc" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "apple" :family "Inconsolata")))))
 ;; (put 'ido-exit-minibuffer 'disabled nil)
-
