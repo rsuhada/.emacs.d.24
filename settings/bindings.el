@@ -326,6 +326,10 @@ If LINE is non-nil, duplicate that line instead."
 (global-set-key (kbd "C-b") 'helm-mini)
 (global-set-key (kbd "C-n") 'ace-jump-char-mode)
 
+(global-set-key "\C-p" 'goto-last-change)
+;; (global-set-key "\C-\M-p" 'pop-global-mark)
+(global-set-key "\C-\M-p" 'rs-macro/jump-to-last-mark)
+
 ;; set the -h instead of backspace
 (global-set-key "\C-h" 'backward-delete-char-untabify)
 (define-key isearch-mode-map "\C-h" 'isearch-delete-char)

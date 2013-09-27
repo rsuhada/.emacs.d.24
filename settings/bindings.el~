@@ -323,7 +323,7 @@ If LINE is non-nil, duplicate that line instead."
 
 ;; how to use the freed bindings:
 (global-set-key (kbd "C-f") 'find-file) ; ido
-(global-set-key (kbd "C-b") 'helm)
+(global-set-key (kbd "C-b") 'helm-mini)
 (global-set-key (kbd "C-n") 'ace-jump-char-mode)
 
 ;; set the -h instead of backspace
