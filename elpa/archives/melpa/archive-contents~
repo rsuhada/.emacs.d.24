@@ -161,7 +161,7 @@
 		       [(20110901 930)
 			nil "operate on current line if region undefined [github]" single])
  (whitespace-cleanup-mode .
-			  [(20130927 1025)
+			  [(20130927 1216)
 			   nil "Intelligently call whitespace-cleanup on save [github]" single])
  (wgrep-helm .
 	     [(20121201 2230)
@@ -610,7 +610,7 @@
 			  (0 4)))
 			"SVG-based themes for mode-line [github]" tar])
  (surround .
-	   [(20121022 1257)
+	   [(20130927 837)
 	    nil "emulate surround.vim from Vim [github]" single])
  (supergenpass .
 	       [(20130328 2248)
@@ -1349,7 +1349,7 @@
 		[(20130816 1020)
 		 nil "Interface to the ArchLinux package manager [github]" single])
  (pkg-info .
-	   [(20130817 2334)
+	   [(20130927 1230)
 	    ((dash
 	      (1 6 0))
 	     (s
@@ -2212,7 +2212,7 @@
 			       [(20130730 1032)
 				nil "Advice for magit-log-edit-commit [github]" single])
  (magit .
-	[(20130927 21)
+	[(20130927 1728)
 	 ((cl-lib
 	   (0 3))
 	  (git-commit-mode
@@ -2555,6 +2555,9 @@
  (itail .
 	[(20130102 1159)
 	 nil "An interactive tail mode [github]" single])
+ (isgd .
+       [(20130927 1557)
+	nil "Shorten URLs using the isgd.com shortener service [github]" single])
  (isend-mode .
 	     [(20130419 1158)
 	      nil "Interactively send parts of an Emacs buffer to an interpreter [github]" single])
@@ -2984,7 +2987,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [github]" single])
  (helm .
-       [(20130926 2236)
+       [(20130927 1554)
 	nil "Helm is an Emacs incremental and narrowing framework [github]" tar])
  (header2 .
 	  [(20130723 2321)
@@ -3515,7 +3518,7 @@
 		   (0 6 0)))
 		 "Cask support in Flycheck [github]" single])
  (flycheck .
-	   [(20130926 1405)
+	   [(20130927 1540)
 	    ((s
 	      (1 6 0))
 	     (dash
@@ -4086,7 +4089,7 @@
       [(20130826 1941)
        nil "a code browser for Emacs [github]" tar])
  (ebib .
-       [(20130926 2000)
+       [(20130927 1021)
 	nil "a BibTeX database manager [github]" tar])
  (easy-after-load .
 		  [(20121224 2049)

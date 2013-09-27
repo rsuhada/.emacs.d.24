@@ -9,7 +9,8 @@
 (load "~/.emacs.d/settings-packages/auto-complete.el")
 (load "~/.emacs.d/settings-packages/multiple-cursors.el")
 (load "~/.emacs.d/settings-packages/bm.el")
-
+(load "~/.emacs.d/settings-packages/jabber.el")
+(load "~/.emacs.d/settings-packages/key-chord.el")
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

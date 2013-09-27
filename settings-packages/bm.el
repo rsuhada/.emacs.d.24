@@ -11,7 +11,7 @@
 (add-hook' after-init-hook 'bm-repository-load)
 
 ;; Restoring bookmarks when on file find.
-(add-hook 'find-file-hooks 'bm-buffer-restore)
+;; (add-hook 'find-file-hooks 'bm-buffer-restore)
 
 ;   ;; Saving bookmark data on killing a buffer
 ;   (add-hook 'kill-buffer-hook 'bm-buffer-save)

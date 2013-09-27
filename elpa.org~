@@ -18,6 +18,7 @@
 - goto-last-change
 - expand-region
 - bm
+- jabber
 
 * El-get stuff
 - [ ] backups-mode or backup-on-each-save
@@ -42,3 +43,4 @@
 ** TODO new multiple-cursor tricks?
 ** TODO yasnippet personal snippets
 ** TODO refactor rotate text
+** TODO bm-save causes terrible crash, find out why
