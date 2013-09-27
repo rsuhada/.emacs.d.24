@@ -8,7 +8,7 @@
 ;; default window size
 
 (if window-system
-      (set-frame-size (selected-frame) 80 49))
+      (set-frame-size (selected-frame) 77 49))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; full screen

@@ -47,7 +47,6 @@
 (load "~/.emacs.d/settings/tab.el")
 (load "~/.emacs.d/settings/modes.el")
 (load "~/.emacs.d/settings/abbrev.el")
-(load "~/.emacs.d/settings/packages.el")
 
 ;; appearance
 (load "~/.emacs.d/settings/windows.el")
@@ -61,10 +60,11 @@
 (load "~/.emacs.d/settings/dired.el")
 (load "~/.emacs.d/settings/tags.el")
 (load "~/.emacs.d/settings/tramp.el")
-
-;; package settings
-(load "~/.emacs.d/settings/org.el")
 (load "~/.emacs.d/settings/ido.el")
+(load "~/.emacs.d/settings/org.el")
+
+;; packages
+(load "~/.emacs.d/packages.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; working but not used
@@ -151,4 +151,3 @@
 ;;   ;; If there is more than one, they won't work right.
 ;;  '(default ((t (:inherit nil :stipple nil :background "#121212" :foreground "#dcdccc" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "apple" :family "Inconsolata")))))
 ;; (put 'ido-exit-minibuffer 'disabled nil)
-

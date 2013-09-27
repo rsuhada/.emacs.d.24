@@ -28,7 +28,7 @@
 		 [(20111231 345)
 		  nil "Unfold CSS-selector-like expressions to markup [github]" single])
  (zenburn-theme .
-		[(20130914 1044)
+		[(20130927 1228)
 		 nil "A low contrast color theme for Emacs. [github]" single])
  (zen-and-art-theme .
 		    [(20120622 937)
@@ -161,7 +161,7 @@
 		       [(20110901 930)
 			nil "operate on current line if region undefined [github]" single])
  (whitespace-cleanup-mode .
-			  [(20130925 1738)
+			  [(20130927 1025)
 			   nil "Intelligently call whitespace-cleanup on save [github]" single])
  (wgrep-helm .
 	     [(20121201 2230)
@@ -768,7 +768,7 @@
 		  (24 1)))
 		"a dark colorful theme for Emacs24. [github]" single])
  (solarized-theme .
-		  [(20130920 2236)
+		  [(20130927 1029)
 		   nil "The Solarized color theme, ported to Emacs. [github]" tar])
  (soft-morning-theme .
 		     [(20130917 1850)
@@ -798,7 +798,7 @@
 	   [(20130312 1839)
 	    nil "Support sequential operation which omitted prefix keys. [github]" single])
  (smartparens .
-	      [(20130926 1418)
+	      [(20130926 2346)
 	       ((cl-lib
 		 (0 1))
 		(dash
@@ -1028,7 +1028,7 @@
       [(20130521 902)
        nil "Emacs integration for rvm [github]" single])
  (rust-mode .
-	    [(20130907 38)
+	    [(20130926 1504)
 	     nil "A major emacs mode for editing Rust source code [github]" single])
  (ruby-tools .
 	     [(20121008 1851)
@@ -1508,13 +1508,13 @@
 		[(20130525 1903)
 		 nil "Minor-mode to add space between Chinese and English characters. [github]" single])
  (pandoc-mode .
-	      [(20130925 2005)
+	      [(20130927 124)
 	       nil "Minor mode for interacting with Pandoc [github]" tar])
  (pallet .
-	 [(20130919 1342)
+	 [(20130926 1940)
 	  ((cask
 	    (0 4 6)))
-	  "A package manager for Emacs, using Cask. [github]" tar])
+	  "A package management tool for Emacs, using Cask. [github]" tar])
  (palimpsest .
 	     [(20130731 1821)
 	      nil "Various deletion strategies when editing [github]" single])
@@ -2212,7 +2212,7 @@
 			       [(20130730 1032)
 				nil "Advice for magit-log-edit-commit [github]" single])
  (magit .
-	[(20130926 659)
+	[(20130927 21)
 	 ((cl-lib
 	   (0 3))
 	  (git-commit-mode
@@ -2533,6 +2533,11 @@
 	    ((revive
 	      (20121022 1311)))
 	    "Japan law from law.e-gov.go.jp [github]" single])
+ (japanese-holidays .
+		    [(20130927 916)
+		     ((cl-lib
+		       (0 3)))
+		     "calendar functions for the Japanese calendar [github]" single])
  (jade-mode .
 	    [(20130220 1245)
 	     ((sws-mode
@@ -2657,7 +2662,7 @@
 		    [(20130422 1226)
 		     nil "Makes ido-mode display vertically. [github]" single])
  (ido-ubiquitous .
-		 [(20130925 2104)
+		 [(20130926 1857)
 		  ((emacs
 		    (24 1)))
 		  "Use ido (nearly) everywhere. [github]" single])
@@ -2683,7 +2688,7 @@
 			       [(20130228 956)
 				nil "Complete SPACE or HYPHEN when type SPACE in ido [github]" single])
  (ido-at-point .
-	       [(20130913 1944)
+	       [(20130926 2040)
 		((emacs
 		  (24))
 		 (cl-lib
@@ -2979,7 +2984,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [github]" single])
  (helm .
-       [(20130926 1118)
+       [(20130926 2236)
 	nil "Helm is an Emacs incremental and narrowing framework [github]" tar])
  (header2 .
 	  [(20130723 2321)
@@ -3054,7 +3059,7 @@
 		    [(20120821 1835)
 		     nil "Mode for the dot-language used by graphviz (att). [github]" single])
  (graphene .
-	   [(20130924 1403)
+	   [(20130926 1945)
 	    ((auto-complete
 	      (20130330))
 	     (smartparens
@@ -3262,7 +3267,7 @@
 	    (0 1)))
 	  "generate RELAX NG Compact Schema from RELAX NG Schema, XML Schema and DTD. [github]" tar])
  (geiser .
-	 [(20130925 510)
+	 [(20130926 1908)
 	  nil "GNU Emacs and Scheme talk to each other [github]" tar])
  (gedit-mode .
 	     [(20130513 1719)
@@ -3731,7 +3736,7 @@
 		     (20130225 1754)))
 		   "Data viewer for GNU R [github]" single])
  (ess .
-      [(20130922 246)
+      [(20130927 532)
        nil "No description available. [github]" tar])
  (espuds .
 	 [(20130915 841)
@@ -3779,7 +3784,7 @@
 	 [(20130827 1016)
 	  nil "Erlang major mode [github]" tar])
  (ergoemacs-mode .
-		 [(20130925 1705)
+		 [(20130926 940)
 		  nil "Emacs mode based on common modern software interface and ergonomics. [github]" tar])
  (erefactor .
 	    [(20130521 1838)
@@ -4081,7 +4086,7 @@
       [(20130826 1941)
        nil "a code browser for Emacs [github]" tar])
  (ebib .
-       [(20130924 1743)
+       [(20130926 2000)
 	nil "a BibTeX database manager [github]" tar])
  (easy-after-load .
 		  [(20121224 2049)
@@ -4222,7 +4227,7 @@
 		[(20130328 1119)
 		 nil "make file details hide-able in dired [wiki]" single])
  (dired+ .
-	 [(20130812 1425)
+	 [(20130927 600)
 	  nil "Extensions to Dired. [wiki]" single])
  (dircmp .
 	 [(20130806 1457)
@@ -4231,10 +4236,10 @@
 	   [(20091203 1912)
 	    nil "Diminished modes are minor modes with no modeline display [github]" single])
  (dim-autoload .
-	       [(20130919 2114)
+	       [(20130927 12)
 		nil "dim complete autoload cookie lines [github]" single])
  (diff-hl .
-	  [(20130925 515)
+	  [(20130927 259)
 	   ((cl-lib
 	     (0 2)))
 	   "Highlight uncommitted changes [github]" tar])
@@ -4393,7 +4398,7 @@
 		[(20121128 843)
 		 nil "Highlight certain character columns [wiki]" single])
  (colorsarenice-theme .
-		      [(20130924 1824)
+		      [(20130926 2008)
 		       ((emacs
 			 (24)))
 		       "A color theme. [hg]" tar])
