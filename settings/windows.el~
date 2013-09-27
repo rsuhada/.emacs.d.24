@@ -4,15 +4,17 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; default window size
 
 (if window-system
-      (set-frame-size (selected-frame) 80 49))
+      (set-frame-size (selected-frame) 77 49))
+
+;; default window size
+
+;; (add-to-list 'default-frame-alist '(height . 49))
+;; (add-to-list 'default-frame-alist '(width . 77))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; full screen
-
 (defun toggle-fullscreen ()
   "Toggle full screen"
   (interactive)

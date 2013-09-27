@@ -22,8 +22,10 @@
      )
 )
 
-;; ;; keys
-;; (define-key helm-map (kbd "M-k") 'helm-next-line)
-;; (define-key helm-map (kbd "M-i") 'helm-previous-line)
-;; (define-key helm-map (kbd "M-l") 'helm-next-source)
-;; (define-key helm-map (kbd "M-j") 'helm-previous-source)
+;; keys
+(eval-after-load 'helm
+  '(progn
+     (define-key helm-map (kbd "M-k") 'helm-next-line)
+     (define-key helm-map (kbd "M-i") 'helm-previous-line)
+     (define-key helm-map (kbd "M-l") 'helm-next-source)
+     (define-key helm-map (kbd "M-j") 'helm-previous-source)))
