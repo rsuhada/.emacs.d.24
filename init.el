@@ -74,20 +74,21 @@
 (load "~/.emacs.d/elpa.el")
 (load "~/.emacs.d/el-get.el")
 
+;; manually installed packages - should be refactored and managed via
+;; el-get
+(add-to-list 'load-path
+              "~/.emacs.d/manual-packages/")
+
 ;; load the installed packages
 ;; auto installed packages are loaded at the very end so load their
 ;; configs ony afterward
 (add-hook
  'after-init-hook (lambda () (load "~/.emacs.d/packages.el")))
 
-
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; working but not used
 
 ;; (load "~/.emacs.d/settings/irc.el")
-
-
 
 
 

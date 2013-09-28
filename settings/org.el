@@ -1,8 +1,8 @@
 ;; clean install of org.7.7
-(add-to-list 'load-path
-              "~/.emacs.d/plugins/org-7.7/lisp")
-(require 'org-install)
-(require 'org)
+;; (add-to-list 'load-path
+;;               "~/.emacs.d/plugins/org-7.7/lisp")
+;; (require 'org-install)
+;; (require 'org)
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
 ;; bindings
@@ -160,6 +160,7 @@
            (local-set-key '[M-down] 'sacha/search-word-forward)
            (local-set-key (kbd "C-'") 'goto-match-paren)
            (local-set-key (kbd "M-e") 'rs-macro/mark-line)
+           (local-set-key (kbd "M-h") 'backward-kill-word) ;; was org-mark-element
            (local-set-key '[f7] 'org-store-link)
            (local-set-key '[M-f7] 'org-insert-link)
           ))

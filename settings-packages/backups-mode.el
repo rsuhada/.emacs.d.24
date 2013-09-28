@@ -5,11 +5,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (require 'backups-mode)
-(backups-mode-start)
 
 (setq backup-directory-alist '(("." . "~/.emacs-backups")))
 (defvar backup-directory "~/.emacs-backups/")
 (defvar tramp-backup-directory "~/.emacs-backups/tramp-backups/")
+
+(backups-mode-start)
 
 (setq auto-save-interval 100)
 (setq auto-save-timeout 15)

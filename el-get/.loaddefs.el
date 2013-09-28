@@ -53,11 +53,12 @@ Display a list of packages.
 ;;;***
 
 ;;;### (autoloads nil nil ("backups-mode/backups-mode.el" "backups-mode/bm-utilities.el"
+;;;;;;  "desktop-recover/desktop-recover-setup.el" "desktop-recover/desktop-recover.el"
 ;;;;;;  "el-get/el-get-autoloads.el" "el-get/el-get-build.el" "el-get/el-get-byte-compile.el"
 ;;;;;;  "el-get/el-get-core.el" "el-get/el-get-custom.el" "el-get/el-get-dependencies.el"
 ;;;;;;  "el-get/el-get-install.el" "el-get/el-get-methods.el" "el-get/el-get-notify.el"
 ;;;;;;  "el-get/el-get-recipes.el" "el-get/el-get-status.el" "tellicopy/tellicopy.el")
-;;;;;;  (21062 56691 538752 0))
+;;;;;;  (21062 61630 61220 0))
 
 ;;;***
 

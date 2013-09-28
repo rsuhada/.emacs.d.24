@@ -1,0 +1,5 @@
+(:name desktop-recover
+       :type github
+       :pkgname "doomvox/desktop-recover"
+       :description "Backups .desktop file and recovers it"
+       :website "https://github.com/doomvox/desktop-recover/blob/master/desktop-recover.el")

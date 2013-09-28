@@ -25,15 +25,14 @@
 * El-get stuff
 - [X] tellicopy
 - [X] backups-mode or backup-on-each-save
-- [ ] desktop-recover
-- [ ] counter
-- [ ] inline-string-rectangle
-- [ ] constants
+- [X] desktop-recover
+- [X] counter
+- [X] inline-string-rectangle - deprecated
+- [X] constants
 - [ ] essh
 - [ ] yank-line
 - [ ] xdict
-- [ ] auto-mark?
-- [ ] restore
+- [ ] auto-- [ ] restore
 
 * Prelude
  '(ace-jump-mode ack-and-a-half dash diminish elisp-slime-nav
