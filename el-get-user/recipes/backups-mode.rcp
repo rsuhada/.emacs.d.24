@@ -1,0 +1,5 @@
+(:name backups-mode
+       :type github
+       :pkgname "chadbraunduin/backups-mode"
+       :description "Backups and versioning management system"
+       :website "https://github.com/chadbraunduin/backups-mode")

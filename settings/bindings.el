@@ -574,7 +574,6 @@ If `case-replace' is nil, do not alter case of replacement text."
                   (interactive)
                   (join-line -1)))
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; C-c bindings to Emacs native functions
 

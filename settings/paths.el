@@ -10,6 +10,9 @@
 (setq exec-path (cons "/usr/texbin" exec-path))
 (setenv "PATH" (concat "/usr/texbin:" (getenv "PATH")))
 
+;; need to add git
+(setq exec-path (cons "/opt/local/bin/" exec-path))
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; python path

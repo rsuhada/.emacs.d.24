@@ -182,3 +182,9 @@
 
 (setq cua-enable-cua-keys nil) ;; only for rectangles
 (cua-mode t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; misc. options
+
+(put 'narrow-to-region 'disabled nil)
+(setq enable-recursive-minibuffers t)

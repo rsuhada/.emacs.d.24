@@ -11,6 +11,7 @@
 (load "~/.emacs.d/settings-packages/bm.el")
 (load "~/.emacs.d/settings-packages/jabber.el")
 (load "~/.emacs.d/settings-packages/key-chord.el")
+(load "~/.emacs.d/settings-packages/backups-mode.el")
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -18,6 +19,11 @@
 ;; local settings for smaller packages
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; tellicopy
+
+(load "tellicopy")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; yasnippet

@@ -23,12 +23,12 @@
 - key-chord
 
 * El-get stuff
-- [ ] backups-mode or backup-on-each-save
-- [ ] tellicopy
-- [ ] counter
-- [ ] constants
+- [X] tellicopy
+- [X] backups-mode or backup-on-each-save
 - [ ] desktop-recover
+- [ ] counter
 - [ ] inline-string-rectangle
+- [ ] constants
 - [ ] essh
 - [ ] yank-line
 - [ ] xdict
@@ -52,3 +52,4 @@
 ** TODO bm-save causes terrible crash, find out why
 ** TODO test wgrep
 ** TODO get chord ideas from prelude
+** TODO backups-mode buffer screen

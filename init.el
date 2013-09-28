@@ -38,12 +38,6 @@
 ;; (if (not (server-mode)) (server-start))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; misc. options
-
-(put 'narrow-to-region 'disabled nil)
-(setq enable-recursive-minibuffers t)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; load in setups from files
 
 ;; fundametals
@@ -76,23 +70,15 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-;; setting up package archives
-(require 'package)
+;; setup package managers
+(load "~/.emacs.d/elpa.el")
+(load "~/.emacs.d/el-get.el")
 
-(add-to-list 'package-archives
-    '("marmalade" .
-      "http://marmalade-repo.org/packages/"))
-
-(add-to-list 'package-archives
-  '("melpa" . "http://melpa.milkbox.net/packages/") t)
-
-(package-initialize)
-
+;; load the installed packages
 ;; auto installed packages are loaded at the very end so load their
 ;; configs ony afterward
 (add-hook
  'after-init-hook (lambda () (load "~/.emacs.d/packages.el")))
-
 
 
 
