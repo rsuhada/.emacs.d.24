@@ -76,8 +76,7 @@
 
 ;; manually installed packages - should be refactored and managed via
 ;; el-get
-(add-to-list 'load-path
-              "~/.emacs.d/manual-packages/")
+(add-to-list 'load-path "~/.emacs.d/manual-packages/")
 
 ;; load the installed packages
 ;; auto installed packages are loaded at the very end so load their

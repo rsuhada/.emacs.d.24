@@ -90,6 +90,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; desktop autosaving and recovery
 
+(add-to-list
+'load-path "~/.emacs.d/manual-packages/desktop-recover/")
+
 (require 'desktop-recover)
 (setq desktop-recover-location
       (desktop-recover-fixdir "$HOME/"))

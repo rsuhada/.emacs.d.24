@@ -4,6 +4,7 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
+(add-to-list 'load-path "~/.emacs.d/manual-packages/backups-mode/")
 (require 'backups-mode)
 
 (setq backup-directory-alist '(("." . "~/.emacs-backups")))
