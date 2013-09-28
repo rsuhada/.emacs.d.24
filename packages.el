@@ -4,14 +4,14 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-(load "~/.emacs.d/settings-packages/helm.el")
-(load "~/.emacs.d/settings-packages/smex.el")
-(load "~/.emacs.d/settings-packages/auto-complete.el")
-(load "~/.emacs.d/settings-packages/multiple-cursors.el")
-(load "~/.emacs.d/settings-packages/bm.el")
-(load "~/.emacs.d/settings-packages/jabber.el")
-(load "~/.emacs.d/settings-packages/key-chord.el")
-(load "~/.emacs.d/settings-packages/backups-mode.el")
+(load "~/.emacs.d/settings-packages/init-helm.el")
+(load "~/.emacs.d/settings-packages/init-smex.el")
+(load "~/.emacs.d/settings-packages/init-auto-complete.el")
+(load "~/.emacs.d/settings-packages/init-multiple-cursors.el")
+(load "~/.emacs.d/settings-packages/init-bm.el")
+(load "~/.emacs.d/settings-packages/init-jabber.el")
+(load "~/.emacs.d/settings-packages/init-key-chord.el")
+(load "~/.emacs.d/settings-packages/init-backups-mode.el")
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
