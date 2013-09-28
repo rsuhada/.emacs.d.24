@@ -63,8 +63,31 @@
 (load "~/.emacs.d/settings/ido.el")
 (load "~/.emacs.d/settings/org.el")
 
-;; packages
-(load "~/.emacs.d/packages.el")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; packages management
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; setting up package archives
+(require 'package)
+
+(add-to-list 'package-archives
+    '("marmalade" .
+      "http://marmalade-repo.org/packages/"))
+
+(add-to-list 'package-archives
+  '("melpa" . "http://melpa.milkbox.net/packages/") t)
+
+(package-initialize)
+
+;; auto installed packages are loaded at the very end so load their
+;; configs ony afterward
+(add-hook
+ 'after-init-hook (lambda () (load "~/.emacs.d/packages.el")))
+
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; working but not used

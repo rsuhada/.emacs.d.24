@@ -19,6 +19,8 @@
 - expand-region
 - bm
 - jabber
+- wgrep
+- key-chord
 
 * El-get stuff
 - [ ] backups-mode or backup-on-each-save
@@ -28,6 +30,10 @@
 - [ ] desktop-recover
 - [ ] inline-string-rectangle
 - [ ] essh
+- [ ] yank-line
+- [ ] xdict
+- [ ] auto-mark?
+- [ ] restore
 
 * Prelude
  '(ace-jump-mode ack-and-a-half dash diminish elisp-slime-nav
@@ -44,3 +50,5 @@
 ** TODO yasnippet personal snippets
 ** TODO refactor rotate text
 ** TODO bm-save causes terrible crash, find out why
+** TODO test wgrep
+** TODO get chord ideas from prelude
