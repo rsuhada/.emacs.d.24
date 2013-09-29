@@ -1,0 +1,10 @@
+# -*- mode: snippet -*-
+# name: testing
+# key: testing
+# binding: direct-keybinding
+# expand-env: ((some-var some-value))
+# type: command
+# --
+
+hi is this working?
+$0

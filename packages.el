@@ -28,6 +28,10 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; yasnippet
 
+
+(setq yas-snippet-dirs
+      '("~/.emacs.d/data/snippets"            ;; personal snippets
+        ))
 (yas-global-mode 1)
 
 ;; yas-snippet-dirs

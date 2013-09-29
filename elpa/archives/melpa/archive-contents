@@ -161,7 +161,7 @@
 		       [(20110901 930)
 			nil "operate on current line if region undefined [github]" single])
  (whitespace-cleanup-mode .
-			  [(20130927 1216)
+			  [(20130928 1111)
 			   nil "Intelligently call whitespace-cleanup on save [github]" single])
  (wgrep-helm .
 	     [(20121201 2230)
@@ -204,7 +204,7 @@
 	       (1 6 8)))
 	     "Weblog maintenance via XML-RPC APIs [bzr]" single])
  (web-mode .
-	   [(20130923 2028)
+	   [(20130929 27)
 	    nil "major mode for editing html templates [github]" tar])
  (web .
       [(20130827 1312)
@@ -299,7 +299,7 @@
        [(20120910 951)
 	nil "UUID's for EmacsLisp [github]" single])
  (use-package .
-	      [(20130925 1402)
+	      [(20130925 2244)
 	       ((bind-key
 		 (1 0))
 		(diminish
@@ -768,10 +768,10 @@
 		  (24 1)))
 		"a dark colorful theme for Emacs24. [github]" single])
  (solarized-theme .
-		  [(20130927 1029)
+		  [(20130929 1752)
 		   nil "The Solarized color theme, ported to Emacs. [github]" tar])
  (soft-morning-theme .
-		     [(20130917 1850)
+		     [(20130929 853)
 		      nil "Emacs24 theme with a light background. [github]" single])
  (soft-charcoal-theme .
 		      [(20130924 2006)
@@ -798,7 +798,7 @@
 	   [(20130312 1839)
 	    nil "Support sequential operation which omitted prefix keys. [github]" single])
  (smartparens .
-	      [(20130926 2346)
+	      [(20130929 1419)
 	       ((cl-lib
 		 (0 1))
 		(dash
@@ -831,7 +831,7 @@
 	     [(20130218 1829)
 	      nil "slime extensions for ritz [github]" single])
  (slime .
-	[(20130626 1151)
+	[(20130929 1345)
 	 nil "Superior Lisp Interaction Mode for Emacs [github]" tar])
  (slim-mode .
 	    [(20130614 2240)
@@ -989,7 +989,7 @@
 	      [(20130913 1338)
 	       nil "Major mode for editing Scala >= 2.9 [github]" tar])
  (scala-mode .
-	     [(20121205 1135)
+	     [(20130530 1433)
 	      nil "No description available. [github]" tar])
  (savekill .
 	   [(20130130 2151)
@@ -1402,7 +1402,7 @@
 		   (1 2 1)))
 		 "multiple-cursors extension for phi-search [github]" single])
  (phi-search .
-	     [(20130910 1444)
+	     [(20130923 2359)
 	      nil "another incremental search command, compatible with \"multiple-cursors\" [github]" tar])
  (phi-rectangle .
 		[(20130916 2248)
@@ -1624,7 +1624,7 @@
 		(1 7 0)))
 	      "Org minor mode to synchronize with trello [github]" tar])
  (org-toodledo .
-	       [(20130922 824)
+	       [(20130928 1432)
 		nil "Toodledo integration for Emacs Org mode [github]" tar])
  (org-screenshot .
 		 [(20130822 22)
@@ -1855,7 +1855,7 @@
 		     (9)))
 		   "decompilation extension for nrepl.el [github]" single])
  (nrepl .
-	[(20130925 1859)
+	[(20130929 1449)
 	 ((clojure-mode
 	   (2 0 0))
 	  (cl-lib
@@ -1970,7 +1970,7 @@
 	 [(20130723 2348)
 	  nil "Extensions to `mouse.el'. [wiki]" single])
  (motion-mode .
-	      [(20130801 1041)
+	      [(20130929 2124)
 	       ((flymake-easy
 		 (0 7))
 		(flymake-cursor
@@ -2212,7 +2212,7 @@
 			       [(20130730 1032)
 				nil "Advice for magit-log-edit-commit [github]" single])
  (magit .
-	[(20130927 1728)
+	[(20130929 516)
 	 ((cl-lib
 	   (0 3))
 	  (git-commit-mode
@@ -2310,6 +2310,11 @@
  (list-utils .
 	     [(20121205 1456)
 	      nil "List-manipulation utility functions [github]" single])
+ (list-packages-ext .
+		    [(20130927 1640)
+		     ((s
+		       (1 6 0)))
+		     "Extras for list-packages [github]" single])
  (lispyscript-mode .
 		   [(20130828 1519)
 		    nil "Major mode for LispyScript code. [github]" single])
@@ -2534,7 +2539,7 @@
 	      (20121022 1311)))
 	    "Japan law from law.e-gov.go.jp [github]" single])
  (japanese-holidays .
-		    [(20130927 916)
+		    [(20130929 149)
 		     ((cl-lib
 		       (0 3)))
 		     "calendar functions for the Japanese calendar [github]" single])
@@ -2665,7 +2670,7 @@
 		    [(20130422 1226)
 		     nil "Makes ido-mode display vertically. [github]" single])
  (ido-ubiquitous .
-		 [(20130926 1857)
+		 [(20130927 1229)
 		  ((emacs
 		    (24 1)))
 		  "Use ido (nearly) everywhere. [github]" single])
@@ -2908,7 +2913,7 @@
 		(1 0)))
 	      "GNU GLOBAL helm interface [github]" single])
  (helm-go-package .
-		  [(20130727 2129)
+		  [(20130929 1846)
 		   ((helm
 		     (1 0))
 		    (go-mode
@@ -2987,7 +2992,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [github]" single])
  (helm .
-       [(20130927 1554)
+       [(20130928 2353)
 	nil "Helm is an Emacs incremental and narrowing framework [github]" tar])
  (header2 .
 	  [(20130723 2321)
@@ -3518,7 +3523,7 @@
 		   (0 6 0)))
 		 "Cask support in Flycheck [github]" single])
  (flycheck .
-	   [(20130927 1540)
+	   [(20130928 1223)
 	    ((s
 	      (1 6 0))
 	     (dash
@@ -4046,7 +4051,7 @@
 			 (1 9)))
 		       "(de)HTMLization hooks for edit-server.el [github]" single])
  (edit-server .
-	      [(20130811 1234)
+	      [(20130927 1643)
 	       nil "server that responds to edit requests from Chrome [github]" single])
  (edit-list .
 	    [(20100930 1643)
@@ -4384,7 +4389,7 @@
 		      (2 2 7)))
 		    "company-mode completion back-end for inf-ruby [github]" single])
  (company .
-	  [(20130923 513)
+	  [(20130929 226)
 	   nil "Modular in-buffer completion framework [github]" tar])
  (commander .
 	    [(20130901 1637)
@@ -4401,7 +4406,7 @@
 		[(20121128 843)
 		 nil "Highlight certain character columns [wiki]" single])
  (colorsarenice-theme .
-		      [(20130926 2008)
+		      [(20130927 1601)
 		       ((emacs
 			 (24)))
 		       "A color theme. [hg]" tar])
@@ -4437,7 +4442,7 @@
 	      [(20130618 1418)
 	       nil "Major mode to edit CoffeeScript files in Emacs [github]" single])
  (coffee-fof .
-	     [(20130422 201)
+	     [(20130928 1003)
 	      ((coffee-mode
 		(0 4 1)))
 	      "A coffee-mode configuration for `ff-find-other-file'. [github]" single])
@@ -4539,7 +4544,7 @@
 	     [(20120111 1900)
 	      nil "edit Google calendar for calfw.el. [github]" tar])
  (calfw .
-	[(20130923 1555)
+	[(20130929 2012)
 	 nil "Calendar view framework on Emacs [github]" tar])
  (cacoo .
 	[(20120319 2027)
@@ -4808,8 +4813,8 @@
       [(20130817 845)
        nil "various useful ways to do `multi-occur' [wiki]" single])
  (anzu .
-       [(20130923 1826)
-	nil "Emacs Port of anzu.vim [github]" single])
+       [(20130928 2209)
+	nil "Show number of matches in mode-line while searching [github]" single])
  (anything-git-grep .
 		    [(20130609 1111)
 		     ((anything
@@ -4824,7 +4829,7 @@
 	   [(20130606 946)
 	    nil "open anything / QuickSilver-like candidate-selection framework [git]" tar])
  (anti-zenburn-theme .
-		     [(20130915 11)
+		     [(20130928 204)
 		      nil "Low-contrast Zenburn-inverted theme [github]" single])
  (ansi .
        [(20130827 1653)
@@ -4853,7 +4858,7 @@
 	   [(20121205 1452)
 	    nil "anaphoric macros providing implicit temp variables [github]" single])
  (ample-theme .
-	      [(20130921 2221)
+	      [(20130928 2151)
 	       nil "Calm Dark Theme for Emacs [github]" single])
  (all-ext .
 	  [(20130824 1206)

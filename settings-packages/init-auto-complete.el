@@ -8,6 +8,7 @@
 (require 'auto-complete-config)
 (global-auto-complete-mode)
 
+(setq ac-comphist-file "~/.emacs.d/data/ac-comphist.dat")
 
 (ac-flyspell-workaround)                ; has to be in this line otherwise does not work
 (add-to-list 'ac-dictionary-directories "~/.emacs.d/plugins/auto-complete-1.3.1/ac-dict")

@@ -71,8 +71,8 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 ;; setup package managers
-(load "~/.emacs.d/elpa.el")
-(load "~/.emacs.d/el-get.el")
+(load "~/.emacs.d/settings/elpa.el")
+(load "~/.emacs.d/settings/el-get.el")
 
 ;; manually installed packages - should be refactored and managed via
 ;; el-get

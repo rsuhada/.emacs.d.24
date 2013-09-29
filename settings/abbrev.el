@@ -2,7 +2,7 @@
 ;; abbreviations setup
 
 (setq abbrev-file-name             ;; tell emacs where to read abbrev
-        "~/.emacs.d/abbrev_defs")
+        "~/.emacs.d/data/abbrev_defs")
 
 (setq save-abbrevs t)              ;; save abbrevs when files are saved
 (if (file-exists-p abbrev-file-name)
