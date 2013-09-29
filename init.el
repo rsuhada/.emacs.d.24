@@ -20,18 +20,18 @@
 ;; good fonts: Andale Mono, Inconsolata, Consolas
 ;; this also sets a rudimentary dark color theme
 
-(custom-set-faces
- '(default ((t (:inherit nil :stipple nil :background "#121212"
- :foreground "#dcdccc" :inverse-video nil :box nil :strike-through nil
- :overline nil :underline nil :slant normal :weight normal :height 130
- :width normal :foundry "apple" :family "Andale Mono"))))
- '(bm-fringe-persistent-face ((((class color) (background dark))
- (:background "#d0bf8f" :foreground "#d0bf8f"))))
- '(my-linum-hl ((t (:inherit background :linum "#259185"))))
- '(org-level-1 ((t (:foreground "#dfaf8f"))))
- '(which-func ((((class color) (min-colors 88) (background dark))
- (:foreground "#859900")))))
-(put 'ido-exit-minibuffer 'disabled nil)
+;; (custom-set-faces
+;;  '(default ((t (:inherit nil :stipple nil :background "#121212"
+;;  :foreground "#dcdccc" :inverse-video nil :box nil :strike-through nil
+;;  :overline nil :underline nil :slant normal :weight normal :height 130
+;;  :width normal :foundry "apple" :family "Andale Mono"))))
+;;  '(bm-fringe-persistent-face ((((class color) (background dark))
+;;  (:background "#d0bf8f" :foreground "#d0bf8f"))))
+;;  '(my-linum-hl ((t (:inherit background :linum "#259185"))))
+;;  '(org-level-1 ((t (:foreground "#dfaf8f"))))
+;;  '(which-func ((((class color) (min-colors 88) (background dark))
+;;  (:foreground "#859900")))))
+;; (put 'ido-exit-minibuffer 'disabled nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run server
@@ -48,11 +48,7 @@
 (load "~/.emacs.d/settings/tab.el")
 (load "~/.emacs.d/settings/modes.el")
 (load "~/.emacs.d/settings/abbrev.el")
-
-;; appearance
 (load "~/.emacs.d/settings/windows.el")
-(load "~/.emacs.d/settings/mode-line.el")
-(load "~/.emacs.d/settings/appearance.el")
 
 ;; built-in tools settings
 (load "~/.emacs.d/settings/ibuffer.el")
@@ -83,6 +79,19 @@
 ;; configs ony afterward
 (add-hook
  'after-init-hook (lambda () (load "~/.emacs.d/packages.el")))
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;;
+;; color theme
+;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+(add-hook
+ 'after-init-hook (lambda () (load "~/.emacs.d/settings/init-color-theme.el")))
+
+
+
+
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; working but not used
