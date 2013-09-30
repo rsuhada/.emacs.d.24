@@ -21,16 +21,6 @@
 (desktop-save-mode 1)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; higlhlight parens
-
-(show-paren-mode t)
-(setq show-paren-delay 0)           ; how long to wait?
-(setq show-paren-style 'expression) ; alternatives are 'parenthesis' and 'mixed'
-
-(set-face-attribute 'show-paren-match-face t
-        :weight 'bold :underline nil :overline nil :slant 'normal)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Trailing whitespace is unnecessary
 (add-hook 'before-save-hook (lambda () (delete-trailing-whitespace)))
 

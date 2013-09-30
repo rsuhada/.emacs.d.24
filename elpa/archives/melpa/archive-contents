@@ -8,7 +8,7 @@
 	     (2 2 3)))
 	   "Ruby from Emacs [github]" tar])
  (zoom-frm .
-	   [(20130913 2132)
+	   [(20130930 215)
 	    ((frame-fns
 	      (0))
 	     (frame-cmds
@@ -89,7 +89,7 @@
 		  [(20130401 229)
 		   nil "show whole days of world-time diffs [github]" single])
  (workgroups2 .
-	      [(20130925 2128)
+	      [(20130929 2350)
 	       nil "New workspaces for Emacs [github]" tar])
  (workgroups .
 	     [(20110724 1825)
@@ -1145,9 +1145,6 @@
 	   ((json
 	     (1 2)))
 	   "A library for pasting to https://refheap.com [github]" single])
- (redshank .
-	   [(20120510 1230)
-	    nil "No description available. [git]" tar])
  (redo+ .
 	[(20130424 155)
 	 nil "Redo/undo system for Emacs [wiki]" single])
@@ -1227,7 +1224,7 @@
 	     [(20130214 1502)
 	      nil "Safely pretty-print greek letters, mathematical symbols, or anything else. [github]" single])
  (purple-haze-theme .
-		    [(20130920 1918)
+		    [(20130930 1051)
 		     ((emacs
 		       (24 0)))
 		     "an overtly purple color theme for Emacs24. [github]" single])
@@ -1855,7 +1852,7 @@
 		     (9)))
 		   "decompilation extension for nrepl.el [github]" single])
  (nrepl .
-	[(20130929 1449)
+	[(20130929 2219)
 	 ((clojure-mode
 	   (2 0 0))
 	  (cl-lib
@@ -2175,14 +2172,14 @@
 		  (1 3 0)))
 		"topgit plug-in for Magit [github]" single])
  (magit-svn .
-	    [(20130924 711)
+	    [(20130927 1732)
 	     ((cl-lib
 	       (0 3))
 	      (magit
 	       (1 3 0)))
 	     "git-svn plug-in for Magit [github]" single])
  (magit-stgit .
-	      [(20130923 1703)
+	      [(20130927 1732)
 	       ((cl-lib
 		 (0 3))
 		(magit
@@ -2212,7 +2209,7 @@
 			       [(20130730 1032)
 				nil "Advice for magit-log-edit-commit [github]" single])
  (magit .
-	[(20130929 516)
+	[(20130930 4)
 	 ((cl-lib
 	   (0 3))
 	  (git-commit-mode
@@ -2715,7 +2712,7 @@
 	     [(20130921 1436)
 	      nil "Extensions to `icomplete.el'. [wiki]" single])
  (icicles .
-	  [(20130922 2306)
+	  [(20130929 1722)
 	   nil "Minibuffer input completion and cycling. [wiki]" tar])
  (ibuffer-vc .
 	     [(20130924 1408)
@@ -2913,7 +2910,7 @@
 		(1 0)))
 	      "GNU GLOBAL helm interface [github]" single])
  (helm-go-package .
-		  [(20130929 1846)
+		  [(20130930 4)
 		   ((helm
 		     (1 0))
 		    (go-mode
@@ -3895,7 +3892,7 @@
 			     [(20130415 1244)
 			      nil "Simple hack into ispell to fix (muscle) memory problems [github]" single])
  (emacsc .
-	 [(20130925 1738)
+	 [(20130930 149)
 	  nil "helper for emacsc(1) [github]" tar])
  (emacs-toml .
 	     [(20130903 2155)
@@ -4946,6 +4943,13 @@
 	    (popup
 	     (0 5 0)))
 	   "Auto Complete with Helm [github]" single])
+ (ac-geiser .
+	    [(20130929 1447)
+	     ((geiser
+	       (0 5))
+	      (auto-complete
+	       (1 4)))
+	     "Auto-complete backend for geiser [github]" tar])
  (ac-emmet .
 	   [(20130826 726)
 	    ((emmet-mode
@@ -4962,6 +4966,9 @@
  (abc-mode .
 	   [(20130607 917)
 	    nil "Major mode for editing abc music files [github]" single])
+ (redshank .
+	   [(20120510 1230)
+	    nil "No description available. [git]" tar])
  (helm-c-moccur .
 		[(20130216 1417)
 		 nil "helm source for color-moccur.el [github]" single]))

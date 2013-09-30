@@ -21,6 +21,10 @@
 - jabber
 - wgrep
 - key-chord
+- zenburn
+- melpa
+- org
+- rainbow-mode
 
 * El-get stuff
 - [X] tellicopy

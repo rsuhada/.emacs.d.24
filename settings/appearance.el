@@ -16,11 +16,6 @@
 ;; highlight current line
 (global-hl-line-mode 1)
 
-;; To customize the background color
-(set-face-background 'hl-line "#0d3340") ; brighter blue for solarized
-(set-face-foreground 'highlight nil)
-(set-face-foreground 'hl-line nil)
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; color current line in the left border - from stackowerflow
 
@@ -60,3 +55,27 @@
   (let ((my-linum-current-line-number (line-number-at-pos)))
     ad-do-it))
 (ad-activate 'linum-update)
+
+;; To customize the highlighted background color
+(set-face-background 'hl-line "#202020")
+(set-face-foreground 'highlight nil)
+(set-face-foreground 'hl-line nil)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; higlhlight parens
+
+(show-paren-mode t)
+(setq show-paren-delay 0)           ; how long to wait?
+(setq show-paren-style 'expression) ; alternatives are 'parenthesis' and 'mixed'
+
+(custom-set-faces
+ '(show-paren-match ((t (:background "#121212" :weight bold)))))
+
+
+;; (set-face-background 'show-paren-match-face (face-background 'default))
+;; (set-face-background 'show-paren-match-face (face-background "#def"))
+;; (set-face-foreground 'show-paren-match-face "#def")
+;; (set-face-attribute 'show-paren-match-face nil :weight 'extra-bold :slant italic)
+
+;; (set-face-attribute 'show-paren-match-face t
+;;         :weight 'bold :underline nil :overline nil :slant 'italic)

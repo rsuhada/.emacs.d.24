@@ -4,7 +4,6 @@
 ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; Turn off mouse interface early in startup to avoid momentary
 ;; display
@@ -14,24 +13,6 @@
 
 ;; No splash screen
 (setq inhibit-startup-message t)
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; font for mac
-;; good fonts: Andale Mono, Inconsolata, Consolas
-;; this also sets a rudimentary dark color theme
-
-;; (custom-set-faces
-;;  '(default ((t (:inherit nil :stipple nil :background "#121212"
-;;  :foreground "#dcdccc" :inverse-video nil :box nil :strike-through nil
-;;  :overline nil :underline nil :slant normal :weight normal :height 130
-;;  :width normal :foundry "apple" :family "Andale Mono"))))
-;;  '(bm-fringe-persistent-face ((((class color) (background dark))
-;;  (:background "#d0bf8f" :foreground "#d0bf8f"))))
-;;  '(my-linum-hl ((t (:inherit background :linum "#259185"))))
-;;  '(org-level-1 ((t (:foreground "#dfaf8f"))))
-;;  '(which-func ((((class color) (min-colors 88) (background dark))
-;;  (:foreground "#859900")))))
-;; (put 'ido-exit-minibuffer 'disabled nil)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; run server
@@ -176,3 +157,38 @@
 ;;   ;; If there is more than one, they won't work right.
 ;;  '(default ((t (:inherit nil :stipple nil :background "#121212" :foreground "#dcdccc" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 150 :width normal :foundry "apple" :family "Inconsolata")))))
 ;; (put 'ido-exit-minibuffer 'disabled nil)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(compilation-message-face (quote default))
+ '(custom-safe-themes (quote ("62b86b142b243071b5adb4d48a0ab89aefd3cf79ee3adc0bb297ea873b36d23f" "8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(ediff-diff-options "-w")
+ '(highlight-changes-colors (quote ("#d33682" "#6c71c4")))
+ '(highlight-tail-colors (quote (("#073642" . 0) ("#546E00" . 20) ("#00736F" . 30) ("#00629D" . 50) ("#7B6000" . 60) ("#8B2C02" . 70) ("#93115C" . 85) ("#073642" . 100))))
+ '(jabber-auto-reconnect nil)
+ '(jabber-avatar-verbose nil)
+ '(jabber-chat-buffer-format "*-jab-%n-*")
+ '(jabber-history-enabled t)
+ '(jabber-mode-line-mode nil)
+ '(jabber-roster-buffer "*-jab-*")
+ '(jabber-roster-line-format " %c %-25n %u %-8s (%r)")
+ '(jabber-show-offline-contacts t)
+ '(jabber-vcard-avatars-retrieve nil)
+ '(magit-diff-use-overlays nil)
+ '(safe-local-variable-values (quote ((eval when (fboundp (quote rainbow-mode)) (rainbow-mode 1)))))
+ '(syslog-debug-face (quote ((t :background unspecified :foreground "#2aa198" :weight bold))))
+ '(syslog-error-face (quote ((t :background unspecified :foreground "#dc322f" :weight bold))))
+ '(syslog-hour-face (quote ((t :background unspecified :foreground "#859900"))))
+ '(syslog-info-face (quote ((t :background unspecified :foreground "#268bd2" :weight bold))))
+ '(syslog-ip-face (quote ((t :background unspecified :foreground "#b58900"))))
+ '(syslog-su-face (quote ((t :background unspecified :foreground "#d33682"))))
+ '(syslog-warn-face (quote ((t :background unspecified :foreground "#cb4b16" :weight bold))))
+ '(weechat-color-list (quote (unspecified "#002b36" "#073642" "#990A1B" "#dc322f" "#546E00" "#859900" "#7B6000" "#b58900" "#00629D" "#268bd2" "#93115C" "#d33682" "#00736F" "#2aa198" "#839496" "#657b83"))))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:inherit nil :stipple nil :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :heigh 120 :width normal :foundry "apple" :family "Andale Mono")))))

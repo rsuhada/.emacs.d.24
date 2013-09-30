@@ -323,7 +323,7 @@ If LINE is non-nil, duplicate that line instead."
 
 ;; how to use the freed bindings:
 (global-set-key (kbd "C-f") 'find-file) ; ido
-(global-set-key (kbd "C-b") 'helm-mini)
+(global-set-key (kbd "C-b") 'helm-hud)
 (global-set-key (kbd "C-n") 'ace-jump-char-mode)
 
 (global-set-key "\C-p" 'goto-last-change)
@@ -380,6 +380,7 @@ If LINE is non-nil, duplicate that line instead."
 
 (global-set-key [f10]   'unexpand-abbrev)
 (global-set-key [M-f11]   'eval-region)
+(global-set-key [C-f11]   'toggle-fullscreen)
 
 (global-set-key [S-f12] 'help)
 
