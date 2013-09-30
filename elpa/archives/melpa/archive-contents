@@ -193,7 +193,7 @@
 	     (1 2)))
 	   "Chat via WeeChat's relay protocol in Emacs [github]" tar])
  (wedge-ws .
-	   [(20130804 2311)
+	   [(20130930 1547)
 	    nil "Wedge whitespace between columns in text [github]" single])
  (websocket .
 	    [(20130921 2340)
@@ -798,7 +798,7 @@
 	   [(20130312 1839)
 	    nil "Support sequential operation which omitted prefix keys. [github]" single])
  (smartparens .
-	      [(20130929 1419)
+	      [(20130930 1316)
 	       ((cl-lib
 		 (0 1))
 		(dash
@@ -870,7 +870,7 @@
 	       [(20130908 1604)
 		nil "pure elisp HTTP server [github]" single])
  (simple-call-tree+ .
-		    [(20130512 16)
+		    [(20130930 1619)
 		     nil "Extensions to simple-call-tree [wiki]" single])
  (simple-call-tree .
 		   [(20130330 940)
@@ -1145,6 +1145,9 @@
 	   ((json
 	     (1 2)))
 	   "A library for pasting to https://refheap.com [github]" single])
+ (redshank .
+	   [(20120510 1230)
+	    nil "No description available. [git]" tar])
  (redo+ .
 	[(20130424 155)
 	 nil "Redo/undo system for Emacs [wiki]" single])
@@ -2209,7 +2212,7 @@
 			       [(20130730 1032)
 				nil "Advice for magit-log-edit-commit [github]" single])
  (magit .
-	[(20130930 4)
+	[(20130930 1656)
 	 ((cl-lib
 	   (0 3))
 	  (git-commit-mode
@@ -2989,7 +2992,7 @@
 	    (20120509)))
 	  "helm-sources and some utilities for GNU R. [github]" single])
  (helm .
-       [(20130928 2353)
+       [(20130930 1416)
 	nil "Helm is an Emacs incremental and narrowing framework [github]" tar])
  (header2 .
 	  [(20130723 2321)
@@ -3207,7 +3210,7 @@
 		 (1 0)))
 	       "Manage Git hunks straight from the buffer [github]" single])
  (git-gutter .
-	     [(20130919 2251)
+	     [(20130930 2251)
 	      nil "Port of Sublime Text plugin GitGutter [github]" single])
  (git-dwim .
 	   [(20130130 2150)
@@ -3272,7 +3275,7 @@
 	    (0 1)))
 	  "generate RELAX NG Compact Schema from RELAX NG Schema, XML Schema and DTD. [github]" tar])
  (geiser .
-	 [(20130926 1908)
+	 [(20130930 515)
 	  nil "GNU Emacs and Scheme talk to each other [github]" tar])
  (gedit-mode .
 	     [(20130513 1719)
@@ -3520,7 +3523,7 @@
 		   (0 6 0)))
 		 "Cask support in Flycheck [github]" single])
  (flycheck .
-	   [(20130928 1223)
+	   [(20130930 1027)
 	    ((s
 	      (1 6 0))
 	     (dash
@@ -3765,7 +3768,7 @@
 	  [(20091203 1913)
 	   nil "emacs window session manager [github]" single])
  (es-lib .
-	 [(20130923 41)
+	 [(20130930 354)
 	  ((cl-lib
 	    (1 0)))
 	  "A collection of emacs utilities [github]" tar])
@@ -3823,7 +3826,7 @@
 	   [(20130220 1109)
 	    nil "assign files to projects, programatically [github]" tar])
  (epl .
-      [(20130914 1604)
+      [(20130929 1659)
        nil "Emacs Package Library [github]" tar])
  (epic .
        [(20130320 1540)
@@ -4265,7 +4268,7 @@
    [(20130915 253)
     nil "quickly browse, filter, and edit plain text notes [git]" single])
  (deferred .
-   [(20130523 1007)
+   [(20130930 1434)
     nil "Simple asynchronous functions for emacs lisp [github]" single])
  (dedicated .
 	    [(20090428 2131)
@@ -4403,7 +4406,7 @@
 		[(20121128 843)
 		 nil "Highlight certain character columns [wiki]" single])
  (colorsarenice-theme .
-		      [(20130927 1601)
+		      [(20130930 1224)
 		       ((emacs
 			 (24)))
 		       "A color theme. [hg]" tar])
@@ -4966,9 +4969,6 @@
  (abc-mode .
 	   [(20130607 917)
 	    nil "Major mode for editing abc music files [github]" single])
- (redshank .
-	   [(20120510 1230)
-	    nil "No description available. [git]" tar])
  (helm-c-moccur .
 		[(20130216 1417)
 		 nil "helm source for color-moccur.el [github]" single]))

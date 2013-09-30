@@ -13,7 +13,7 @@
 (load "~/.emacs.d/settings-packages/init-jabber.el")
 (load "~/.emacs.d/settings-packages/init-key-chord.el")
 (load "~/.emacs.d/settings-packages/init-backups-mode.el")
-
+(load "~/.emacs.d/secrets/org2blog.el")
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;;

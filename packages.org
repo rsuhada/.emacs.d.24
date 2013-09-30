@@ -25,6 +25,9 @@
 - melpa
 - org
 - rainbow-mode
+- xml-rpc
+- metaweblog
+- org2blog
 
 * El-get stuff
 - [X] tellicopy
