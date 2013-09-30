@@ -1,6 +1,6 @@
-# name: (current time)
-# key: time
-# --
+# -*- mode: snippet -*-
+# -*- coding: utf-8 -*-
+# name: date
 # contributor: Robert Suhada
 # --
-`(insert (format-time-string "%Y-%m-%d"))`
+`(insert (format-time-string "%Y-%m-%d"))` $0
