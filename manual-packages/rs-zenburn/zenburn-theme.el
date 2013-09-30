@@ -43,9 +43,18 @@
   '(("zenburn-fg"       . "#DCDCCC")
     ("zenburn-fg-1"     . "#656555")
 
+    ;; ;; nice setup
+    ;; ("zenburn-bg-1"     . "#121212")
+    ;; ("zenburn-bg-05"    . "#1a1a1a")
+    ;; ("zenburn-bg"     . "#232323")
+    ;; ("zenburn-bg+1"    . "#333")
+    ;; ("zenburn-bg+2"       . "#444")
+    ;; ("zenburn-bg+3"     . "#555")
+
+    ;; slightly darker
     ("zenburn-bg-1"     . "#121212")
-    ("zenburn-bg-05"    . "#1a1a1a")
-    ("zenburn-bg"     . "#232323")
+    ("zenburn-bg-05"    . "#161616")
+    ("zenburn-bg"     . "#1d1d1d")
     ("zenburn-bg+1"    . "#333")
     ("zenburn-bg+2"       . "#444")
     ("zenburn-bg+3"     . "#555")
@@ -630,14 +639,14 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(org-column ((t (:background ,zenburn-bg-1))))
    `(org-column-title ((t (:background ,zenburn-bg-1 :underline t :weight bold))))
 ;;;;; outline
-   `(outline-1 ((t (:foreground ,zenburn-orange))))
-   `(outline-2 ((t (:foreground ,zenburn-green+4))))
-   `(outline-3 ((t (:foreground ,zenburn-blue-1))))
-   `(outline-4 ((t (:foreground ,zenburn-yellow-2))))
-   `(outline-5 ((t (:foreground ,zenburn-cyan))))
-   `(outline-6 ((t (:foreground ,zenburn-green+2))))
-   `(outline-7 ((t (:foreground ,zenburn-red-4))))
-   `(outline-8 ((t (:foreground ,zenburn-blue-4))))
+   `(outline-1 ((t (:background ,zenburn-bg+1 :foreground ,zenburn-orange))))
+   `(outline-2 ((t (:background ,zenburn-bg :foreground ,zenburn-yellow))))
+   `(outline-3 ((t (:background ,zenburn-bg :foreground ,zenburn-blue-1))))
+   `(outline-4 ((t (:background ,zenburn-bg :foreground ,zenburn-yellow-2))))
+   `(outline-5 ((t (:background ,zenburn-bg :foreground ,zenburn-cyan))))
+   `(outline-6 ((t (:background ,zenburn-bg :foreground ,zenburn-green+2))))
+   `(outline-7 ((t (:background ,zenburn-bg :foreground ,zenburn-red-4))))
+   `(outline-8 ((t (:background ,zenburn-bg :foreground ,zenburn-blue-4))))
 ;;;;; p4
    `(p4-depot-added-face ((t :inherit diff-added)))
    `(p4-depot-branch-op-face ((t :inherit diff-changed)))

@@ -6,6 +6,7 @@
 
 (load "~/.emacs.d/settings-packages/init-helm.el")
 (load "~/.emacs.d/settings-packages/init-smex.el")
+(load "~/.emacs.d/settings-packages/init-ido.el")
 (load "~/.emacs.d/settings-packages/init-auto-complete.el")
 (load "~/.emacs.d/settings-packages/init-multiple-cursors.el")
 (load "~/.emacs.d/settings-packages/init-bm.el")

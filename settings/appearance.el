@@ -27,7 +27,8 @@
 
 (require 'hl-line)
 (defface my-linum-hl
-  `((t :inherit linum :background ,(face-background 'hl-line nil t)))
+  ;; `((t :inherit linum :background ,(face-background 'hl-line nil t)))
+  `((t :inherit linum :foreground "#1d1d1d" :background "#9FC59F"))
   "Face for the current line number."
   :group 'linum)
 
@@ -57,7 +58,7 @@
 (ad-activate 'linum-update)
 
 ;; To customize the highlighted background color
-(set-face-background 'hl-line "#202020")
+(set-face-background 'hl-line "#242424")
 (set-face-foreground 'highlight nil)
 (set-face-foreground 'hl-line nil)
 

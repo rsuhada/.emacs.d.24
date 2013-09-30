@@ -41,6 +41,8 @@
 (define-key ido-completion-map (kbd "C-SPC") nil)
 (define-key ido-completion-map (kbd "C-@") nil)
 (define-key ido-completion-map (kbd "C-0") 'ido-restrict-to-matches)
+(define-key ido-completion-map (kbd "M-i") 'ido-prev-match)
+(define-key ido-completion-map (kbd "M-k") 'ido-next-match)
 )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -91,4 +93,3 @@
        (if (looking-back "/")
            (insert "~/data1/sw/")
          (call-interactively 'self-insert-command))))))
-

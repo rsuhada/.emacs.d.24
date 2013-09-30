@@ -76,8 +76,8 @@
                        helm-source-recentf
                        helm-source-file-name-history
                        helm-source-file-cache
-                       ;; helm-imenu-candidates
-                       ;; helm-etags-select
+                       helm-source-imenu
+                       ;; helm-source-etags-select
                        ;; helm-source-bm
                        helm-source-files-in-current-dir
                        helm-source-locate)

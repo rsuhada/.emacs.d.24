@@ -106,13 +106,12 @@
 (make-face 'mode-line-80col-face)
 
 (set-face-attribute 'mode-line nil
-    :foreground "gray60" :background "gray20"
+    :foreground "gray80" :background "gray20"
     :inverse-video nil
     :box '(:line-width 3 :color "gray20" :style nil))
 (set-face-attribute 'mode-line-inactive nil
-    :foreground "gray80" :background "gray40"
-    :inverse-video nil
-    :box '(:line-width 3 :color "gray40" :style nil))
+    :foreground "gray20" :background "gray10"   :inverse-video nil
+    :box '(:line-width 3 :color "gray10" :style nil))
 
 (set-face-attribute 'mode-line-read-only-face nil
     :inherit 'mode-line-face
