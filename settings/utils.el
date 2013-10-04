@@ -40,10 +40,10 @@
       '(
   ("Wikipedia" .
      [simple-query "en.wikipedia.org" "en.wikipedia.org/w/index.php?title=Special:&search=" ""])
+  ("de Wikipedia" .
+     [simple-query "de.wikipedia.org" "de.wikipedia.org/w/index.php?title=Special:&search=" ""])
   ("stackoverflow" .
      [simple-query "stackoverflow.com" "stackoverflow.com/search?q=" ""])
-  ("Reddit Search" .
-   [simple-query "www.reddit.com" "http://www.reddit.com/search?q=" ""])
   ("Emacs Wiki" .
      [simple-query "www.emacswiki.org"
 		   "www.emacswiki.org/cgi-bin/wiki/" ""])
@@ -53,10 +53,11 @@
   ("gm google maps" . [simple-query "maps.google.com" "https://maps.google.com/maps?q=" ""])
   ("gi Google Image Search" .
    [simple-query "images.google.com" "images.google.com/images?hl=en&q=" ""])
+  ("Reddit Search" .
+   [simple-query "www.reddit.com" "http://www.reddit.com/search?q=" ""])
   ("Flickr Search" .
-   [simple-query "www.flickr.com" "flickr.com/search/?q=" ""])
-  )
-       webjump-sample-sites)
+   [simple-query "www.flickr.com" "flickr.com/search/?q=" ""]))
+      webjump-sample-sites)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; sum-column

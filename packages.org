@@ -41,7 +41,8 @@
 - [ ] xdict
 - [ ] auto-- [ ] restore
 
-* Prelude
+* DONE Prelude
+  CLOSED: [2013-10-01 Tue 21:03]
  '(ace-jump-mode ack-and-a-half dash diminish elisp-slime-nav
     expand-region flx-ido flycheck gist
     git-commit-mode gitconfig-mode gitignore-mode grizzl

@@ -145,3 +145,14 @@
 (add-to-list 'process-coding-system-alist '("x-dict" . latin-9))
 (global-set-key (kbd "C-c C-g C-q") 'xdict-query)
 (global-set-key (kbd "C-c C-g C-a") 'xdict-query-with-word-at-point)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; randomize order of lines in a region
+
+(autoload 'randomize-region "randomize-region" "Randomize region." t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; volatile-highlights
+
+(require 'volatile-highlights)
+(volatile-highlights-mode t)

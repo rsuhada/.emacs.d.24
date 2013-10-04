@@ -12,6 +12,8 @@
 ;; (key-chord-define-global "kl"     'forward-word)
 ;; (key-chord-define-global "jk"     'backward-word)
 
+(key-chord-define-global "qw"     'smex)
+
 (key-chord-define-global "4r"     "$")
 (key-chord-define-global "5t"     "%")
 (key-chord-define-global "6t"     "^")
