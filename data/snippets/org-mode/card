@@ -1,0 +1,6 @@
+# -*- mode: snippet -*-
+# name: card
+# key: card
+# --
+$1 :: $0
+;;

@@ -156,3 +156,9 @@
 
 (require 'volatile-highlights)
 (volatile-highlights-mode t)
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; reveal.js setup
+
+(require 'ox-reveal)
+(setq org-reveal-root "file:~/data1/sw/reveal.js/")
