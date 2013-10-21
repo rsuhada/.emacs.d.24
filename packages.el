@@ -161,4 +161,5 @@
 ;; reveal.js setup
 
 (require 'ox-reveal)
-(setq org-reveal-root "file:~/data1/sw/reveal.js/")
+(setq org-reveal-root "file:///Users/rs/data1/sw/reveal.js/")
+;; (setq org-reveal-root "")

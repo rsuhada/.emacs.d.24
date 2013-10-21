@@ -1,8 +1,7 @@
-;; clean install of org.7.7
-;; (add-to-list 'load-path
-;;               "~/.emacs.d/plugins/org-7.7/lisp")
-;; (require 'org-install)
+;; (add-to-list 'load-path "~/.emacs.d/manual-packages/org-8.2.1/lisp")
 ;; (require 'org)
+;; (require 'org-install)
+
 (add-to-list 'auto-mode-alist '("\\.org\\'" . org-mode))
 
 ;; bindings

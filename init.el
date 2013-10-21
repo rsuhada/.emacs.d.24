@@ -68,7 +68,9 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 (add-hook
- 'after-init-hook (lambda () (load "~/.emacs.d/settings/init-color-theme.el")))
+ 'after-init-hook (lambda () (load "~/.emacs.d/settings/init-color-theme.el")
+                    (load "~/.emacs.d/settings/colemak-bindings.el")
+                    ))
 
 
 
