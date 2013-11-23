@@ -63,29 +63,36 @@
 (add-hook 'org-mode-hook
           (lambda ()
            ;; (local-set-key (kbd "M-e") 'rs-macro/mark-line)
-           (lambda-set-key (kbd "M-e") 'next-line)
+           (local-set-key (kbd "M-e") 'next-line)
            (local-set-key (kbd "M-h") 'backward-kill-word) ;; was org-mark-element
           ))
 
 ;; switch for convenienkce
-(global-set-key (kbd "C-t") 'find-file)
-(global-set-key (kbd "C-f") 'transpose-chars)
 
-(global-set-key (kbd "M-t") 'forward-paragraph)
-(global-set-key (kbd "M-p") 'backward-paragraph)
+(global-set-key (kbd "C-t") 'delete-char)
+(global-set-key (kbd "M-t") 'kill-word)
+(global-set-key (kbd "C-f") 'find-file)
+(global-set-key (kbd "M-f") 'backward-word)
+(global-set-key (kbd "C-d") 'transpose-chars)
+(global-set-key (kbd "M-d") 'backward-paragraph)
+(global-set-key (kbd "M-b") 'forward-paragraph)
+(global-set-key (kbd "M-p") 'forward-word)
 
+;; old attempt
+;; (global-set-key (kbd "C-t") 'find-file)
+;; (global-set-key (kbd "C-f") 'transpose-chars)
+;; (global-set-key (kbd "M-t") 'forward-paragraph)
 
 (global-set-key (kbd "C-,") 'keyboard-quit)
 
+(global-set-key (kbd "M-a") 'rs-macro/mark-line)     ;mark line
 
 ;; missing
 ;; M-t transpose-words
 
-;; (global-set-key (kbd "M-e") 'next-line)     ;mark line
 ;; (global-set-key (kbd "M-u") 'previous-line) ;underscore
 
 ;; free
-;; M-a backward-sentence
 ;; M-r (move-to-window-line-top-bottom &optional ARG)
 ;; f8
 
@@ -97,3 +104,25 @@
 
 (global-set-key "\M-o" 'comment-dwim-line)
 (global-set-key (kbd "C-o") 'rs-mark-paragraph)
+
+;; (global-set-key "\M-o" 'comment-dwim-line)
+;; rs-macro/mark-line
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; ein bindings:
+
+(define-key ein:notebook-mode-map "\M-i"
+            'forward-char)
+
+(define-key ein:notebook-mode-map "\M-n"
+            'backward-char)
+
+(define-key ein:notebook-mode-map "\C-\M-e"
+            'ein:worksheet-goto-next-input)
+
+(define-key ein:notebook-mode-map "\C-\M-u"
+            'ein:worksheet-goto-prev-input)
+
+(define-key ein:notebook-mode-map "\M-return"
+            'ein:worksheet-execute-cell-and-goto-next)

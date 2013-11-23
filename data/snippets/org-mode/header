@@ -5,8 +5,7 @@
 # --
 #+TITLE: $1
 #+AUTHOR: Robert Suhada
-#+EMAIL: rsuhada@usm.lmu.de
-#+FILETAGS: work xmm spt
+#+FILETAGS: $2
 #+STARTUP: showstars
 #+STARTUP: content
 #+OPTIONS: \n:t

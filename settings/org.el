@@ -23,14 +23,8 @@
 
 ;; my agendas
 (setq org-agenda-files (list
-                        "~/org/re.org"
-                        ;; "~/org/personal/personal-agenda.org"
-                        ;; "~/org/job.org"
-                        ;; "~/org/personal.org"
-                        ;; "~/org/refile.org"
-                        ;; "~/org/emacs.org"
-                        ;; "~/org/xxl.org"
-                        ;; "~/w/notes/spt.org"
+                        "~/org/personal/personal-agenda.org"
+                        "~/w/o/work-agenda.org"
                         ))
 
 ;; tags
@@ -38,24 +32,9 @@
                             ("python" . ?p)
                             ("bash" . ?b)
                             ("work" . ?w)
-                            ("spt" . ?s)
-                            ("xbcs" . ?x)
-                            ("xdcp" . ?d)
-                            ("xxl" . ?l)
-                            ("coding" . ?c)
                             ("emacs" . ?e)
                             ("computer" . ?C)
                             (:endgroup)
-                            ("note" . ?n)
-                            ("idea" . ?i)
-                            ("quote" . ?q)
-                            ("link" . ?L)
-                            ("read" . ?r)
-                            ("write" . ?t)
-                            ("wiki" . ?W)
-                            ("mac" . ?m)
-                            ("movie" . ?o)
-                            ("visual" . ?v)
                             ("FLAGGED" . ??))))
 
 ;; todo keywords
@@ -158,7 +137,7 @@
            (local-set-key '[M-up] 'sacha/search-word-backward)
            (local-set-key '[M-down] 'sacha/search-word-forward)
            (local-set-key (kbd "C-'") 'goto-match-paren)
-           (local-set-key (kbd "M-e") 'rs-macro/mark-line)
+           ;; (local-set-key (kbd "M-e") 'rs-macro/mark-line)
            (local-set-key (kbd "M-h") 'backward-kill-word) ;; was org-mark-element
            (local-set-key '[f7] 'org-store-link)
            (local-set-key '[M-f7] 'org-insert-link)

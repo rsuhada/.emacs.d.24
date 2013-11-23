@@ -1,0 +1,14 @@
+# -*- mode: snippet -*-
+# name: medlog
+# expand-env: ((yas/indent-line 'fixed) (yas/wrap-around-region 'nil))
+# --
+* `(insert (format-time-string "%Y-%m-%d"))`
+** time
+${1:morning}
+** duration
+${2:30 minutes}
+** grade
+${3:1}
+** notes
+$0
+** realizations
