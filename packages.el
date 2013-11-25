@@ -162,4 +162,4 @@
 
 (require 'ox-reveal)
 (setq org-reveal-root "file:///Users/rs/data1/sw/reveal.js/")
-;; (setq org-reveal-root "")
+;; ;; (setq org-reveal-root "")
