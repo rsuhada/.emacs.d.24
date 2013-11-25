@@ -57,7 +57,7 @@
 (define-key ido-completion-map (kbd "M-e") 'ido-next-match)
 )
 
-(add-hook 'ido-setup-hook 'ido-my-keys)
+(add-hook 'idoaatup-hook 'ido-my-keys)
 
 ;; org
 (add-hook 'org-mode-hook
@@ -112,17 +112,17 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; ein bindings:
 
-(define-key ein:notebook-mode-map "\M-i"
-            'forward-char)
+;; (define-key ein:notebook-mode-map "\M-i"
+;;             'forward-char)
 
-(define-key ein:notebook-mode-map "\M-n"
-            'backward-char)
+;; (define-key ein:notebook-mode-map "\M-n"
+;;             'backward-char)
 
-(define-key ein:notebook-mode-map "\C-\M-e"
-            'ein:worksheet-goto-next-input)
+;; (define-key ein:notebook-mode-map "\C-\M-e"
+;;             'ein:worksheet-goto-next-input)
 
-(define-key ein:notebook-mode-map "\C-\M-u"
-            'ein:worksheet-goto-prev-input)
+;; (define-key ein:notebook-mode-map "\C-\M-u"
+;;             'ein:worksheet-goto-prev-input)
 
-(define-key ein:notebook-mode-map "\M-return"
-            'ein:worksheet-execute-cell-and-goto-next)
+;; (define-key ein:notebook-mode-map "\M-return"
+;;             'ein:worksheet-execute-cell-and-goto-next)
