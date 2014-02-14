@@ -37,11 +37,6 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; movement
 
-(global-set-key (kbd "M-n") 'backward-char) ;indent-new-comment-line
-(global-set-key (kbd "M-i") 'forward-char)  ;downcase-word
-(global-set-key (kbd "M-u") 'previous-line) ;tab-to-tab-stop
-(global-set-key (kbd "M-e") 'next-line)     ;command kill-sentence
-
 ;; keys
 (eval-after-load 'helm
   '(progn
@@ -57,7 +52,7 @@
 (define-key ido-completion-map (kbd "M-e") 'ido-next-match)
 )
 
-(add-hook 'idoaatup-hook 'ido-my-keys)
+(add-hook 'ido-setup-hook 'ido-my-keys)
 
 ;; org
 (add-hook 'org-mode-hook
@@ -67,47 +62,11 @@
            (local-set-key (kbd "M-h") 'backward-kill-word) ;; was org-mark-element
           ))
 
-;; switch for convenienkce
-
-(global-set-key (kbd "C-t") 'delete-char)
-(global-set-key (kbd "M-t") 'kill-word)
-(global-set-key (kbd "C-f") 'find-file)
-(global-set-key (kbd "M-f") 'backward-word)
-(global-set-key (kbd "C-d") 'transpose-chars)
-(global-set-key (kbd "M-p") 'forward-word)
-
-(global-set-key (kbd "C-M-u") 'backward-paragraph)
-(global-set-key (kbd "C-M-e") 'forward-paragraph)
-
 ;; old attempt
 ;; (global-set-key (kbd "C-t") 'find-file)
 ;; (global-set-key (kbd "C-f") 'transpose-chars)
 ;; (global-set-key (kbd "M-t") 'forward-paragraph)
 
-(global-set-key (kbd "C-,") 'keyboard-quit)
-
-(global-set-key (kbd "M-a") 'rs-macro/mark-line)     ;mark line
-
-;; missing
-;; M-t transpose-words
-
-;; (global-set-key (kbd "M-u") 'previous-line) ;underscore
-
-;; free
-;; M-r (move-to-window-line-top-bottom &optional ARG)
-;; f8
-
-
-(global-set-key (kbd "M-;") 'other-window) ; was facemenu-keymap
-(add-hook 'dired-mode-hook (lambda () (define-key dired-mode-map (kbd "M-;") 'other-window))) ; was dired-omit-mode
-(add-hook 'ibuffer-mode-hook (lambda () (define-key ibuffer-mode-map (kbd "M-;") 'other-window))) ; was ibuffer-visit-buffer-1-window
-(global-set-key (kbd "C-;") 'open-line) ; was facemenu-keymap
-
-(global-set-key "\M-o" 'comment-dwim-line)
-(global-set-key (kbd "C-o") 'rs-mark-paragraph)
-
-;; (global-set-key "\M-o" 'comment-dwim-line)
-;; rs-macro/mark-line
 
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -145,13 +104,36 @@
 
 
 
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; fix bindings in isearch
-
 
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
 
 (define-key my-keys-minor-mode-map (kbd "M-n") 'backward-char)
+
+(define-key my-keys-minor-mode-map (kbd "M-n") 'backward-char) ;indent-new-comment-line
+(define-key my-keys-minor-mode-map (kbd "M-i") 'forward-char)  ;downcase-word
+(define-key my-keys-minor-mode-map (kbd "M-u") 'previous-line) ;tab-to-tab-stop
+(define-key my-keys-minor-mode-map (kbd "M-e") 'next-line)     ;command kill-sentence
+
+(define-key my-keys-minor-mode-map (kbd "C-t") 'delete-char)
+(define-key my-keys-minor-mode-map (kbd "M-t") 'kill-word)
+(define-key my-keys-minor-mode-map (kbd "C-f") 'find-file)
+(define-key my-keys-minor-mode-map (kbd "M-f") 'backward-word)
+(define-key my-keys-minor-mode-map (kbd "C-d") 'transpose-chars)
+(define-key my-keys-minor-mode-map (kbd "M-p") 'forward-word)
+
+(define-key my-keys-minor-mode-map (kbd "C-M-u") 'backward-paragraph)
+(define-key my-keys-minor-mode-map (kbd "C-M-e") 'forward-paragraph)
+
+(define-key my-keys-minor-mode-map (kbd "M-a") 'rs-macro/mark-line)     ;mark line
+
+
+(define-key my-keys-minor-mode-map (kbd "M-;") 'other-window) ; was facemenu-keymap
+(add-hook 'dired-mode-hook (lambda () (define-key my-keys-minor-mode-map dired-mode-map (kbd "M-;") 'other-window))) ; was dired-omit-mode
+(add-hook 'ibuffer-mode-hook (lambda () (define-key my-keys-minor-mode-map ibuffer-mode-map (kbd "M-;") 'other-window))) ; was ibuffer-visit-buffer-1-window
+(define-key my-keys-minor-mode-map (kbd "C-;") 'open-line) ; was facemenu-keymap
+
+(define-key my-keys-minor-mode-map "\M-o" 'comment-dwim-line)
+(define-key my-keys-minor-mode-map (kbd "C-o") 'rs-mark-paragraph)
 
 (define-minor-mode my-keys-minor-mode
   "A minor mode so that my key settings override annoying major modes."
@@ -159,7 +141,6 @@
 
 (my-keys-minor-mode 1)
 
-(defun my-minibuffer-setup-hook ()
-  (my-keys-minor-mode 1))
-
-(add-hook 'minibuffer-setup-hook 'my-minibuffer-setup-hook)
+;; (defun my-minibuffer-setup-hook ()
+;;   (my-keys-minor-mode 1))
+;; (add-hook 'minibuffer-setup-hook 'my-minibuffer-setup-hook)

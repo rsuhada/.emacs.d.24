@@ -130,11 +130,11 @@ This is useful when followed by an immediate kill."
 (define-key isearch-mode-map [(return)] 'isearch-exit-other-end)
 (define-key isearch-mode-map [(control return)] 'isearch-exit-normal-end)
 
-(defun underscore ()
-  (interactive)
-  (isearch-unread-key-sequence (list ?_)))
+;; (defun underscore ()
+;;   (interactive)
+;;   (isearch-unread-key-sequence (list ?_)))
 
-(define-key isearch-mode-map (kbd "M-u") 'underscore)
+;; (define-key isearch-mode-map (kbd "M-u") 'underscore)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; defmacro cmd - some sort of simplified macro wrapping?
