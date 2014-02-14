@@ -570,7 +570,7 @@ If `case-replace' is nil, do not alter case of replacement text."
 (setq ns-function-modifier 'hyper)
 
 ;; join line
-(global-set-key (kbd "C-M-u")           ;was backward-sexp
+(global-set-key (kbd "C-M-d")           ;was backward-sexp
             (lambda ()
                   (interactive)
                   (join-line -1)))

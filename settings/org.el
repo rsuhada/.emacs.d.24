@@ -130,20 +130,6 @@
 (setq org-imenu-depth 4)
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-;; fix bindings
-
-(add-hook 'org-mode-hook
-          (lambda ()
-           (local-set-key '[M-up] 'sacha/search-word-backward)
-           (local-set-key '[M-down] 'sacha/search-word-forward)
-           (local-set-key (kbd "C-'") 'goto-match-paren)
-           ;; (local-set-key (kbd "M-e") 'rs-macro/mark-line)
-           (local-set-key (kbd "M-h") 'backward-kill-word) ;; was org-mark-element
-           (local-set-key '[f7] 'org-store-link)
-           (local-set-key '[M-f7] 'org-insert-link)
-          ))
-
-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; dissable super/subscripts in latex export
 
 (setq org-export-with-sub-superscripts nil)

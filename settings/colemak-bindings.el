@@ -74,9 +74,10 @@
 (global-set-key (kbd "C-f") 'find-file)
 (global-set-key (kbd "M-f") 'backward-word)
 (global-set-key (kbd "C-d") 'transpose-chars)
-(global-set-key (kbd "M-d") 'backward-paragraph)
-(global-set-key (kbd "M-b") 'forward-paragraph)
 (global-set-key (kbd "M-p") 'forward-word)
+
+(global-set-key (kbd "C-M-u") 'backward-paragraph)
+(global-set-key (kbd "C-M-e") 'forward-paragraph)
 
 ;; old attempt
 ;; (global-set-key (kbd "C-t") 'find-file)
@@ -126,3 +127,39 @@
 
 ;; (define-key ein:notebook-mode-map "\M-return"
 ;;             'ein:worksheet-execute-cell-and-goto-next)
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; fix bindings in org
+
+(add-hook 'org-mode-hook
+          (lambda ()
+           (local-set-key '[M-up] 'sacha/search-word-backward)
+           (local-set-key '[M-down] 'sacha/search-word-forward)
+           (local-set-key (kbd "C-'") 'goto-match-paren)
+           ;; (local-set-key (kbd "M-e") 'rs-macro/mark-line)
+           (local-set-key (kbd "M-h") 'backward-kill-word) ;; was org-mark-element
+           (local-set-key '[f7] 'org-store-link)
+           (local-set-key '[M-f7] 'org-insert-link)
+          ))
+
+
+
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; fix bindings in isearch
+
+
+(defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
+
+(define-key my-keys-minor-mode-map (kbd "M-n") 'backward-char)
+
+(define-minor-mode my-keys-minor-mode
+  "A minor mode so that my key settings override annoying major modes."
+  t " my-keys" 'my-keys-minor-mode-map)
+
+(my-keys-minor-mode 1)
+
+(defun my-minibuffer-setup-hook ()
+  (my-keys-minor-mode 1))
+
+(add-hook 'minibuffer-setup-hook 'my-minibuffer-setup-hook)

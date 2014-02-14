@@ -13,6 +13,8 @@
         cua-paste
         cua-paste-pop
         dot-mode-execute
+        ess-smart-comma
+        ess-yank
         goto-last-change
         goto-match-paren
         isearch-abort
