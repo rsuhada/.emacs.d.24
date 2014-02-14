@@ -107,8 +107,6 @@
 
 (defvar my-keys-minor-mode-map (make-keymap) "my-keys-minor-mode keymap.")
 
-(define-key my-keys-minor-mode-map (kbd "M-n") 'backward-char)
-
 (define-key my-keys-minor-mode-map (kbd "M-n") 'backward-char) ;indent-new-comment-line
 (define-key my-keys-minor-mode-map (kbd "M-i") 'forward-char)  ;downcase-word
 (define-key my-keys-minor-mode-map (kbd "M-u") 'previous-line) ;tab-to-tab-stop
@@ -117,12 +115,15 @@
 (define-key my-keys-minor-mode-map (kbd "C-t") 'delete-char)
 (define-key my-keys-minor-mode-map (kbd "M-t") 'kill-word)
 (define-key my-keys-minor-mode-map (kbd "C-f") 'find-file)
-(define-key my-keys-minor-mode-map (kbd "M-f") 'backward-word)
 (define-key my-keys-minor-mode-map (kbd "C-d") 'transpose-chars)
-(define-key my-keys-minor-mode-map (kbd "M-p") 'forward-word)
 
-(define-key my-keys-minor-mode-map (kbd "C-M-u") 'backward-paragraph)
-(define-key my-keys-minor-mode-map (kbd "C-M-e") 'forward-paragraph)
+(define-key my-keys-minor-mode-map (kbd "M-p") 'ace-jump-char-mode)
+;; (define-key my-keys-minor-mode-map (kbd "M-f") 'backward-word)
+
+(define-key my-keys-minor-mode-map (kbd "C-i") 'forward-word)
+(define-key my-keys-minor-mode-map (kbd "C-n") 'backward-word)
+(define-key my-keys-minor-mode-map (kbd "M-C-u") 'backward-paragraph)
+(define-key my-keys-minor-mode-map (kbd "M-C-e") 'forward-paragraph)
 
 (define-key my-keys-minor-mode-map (kbd "M-a") 'rs-macro/mark-line)     ;mark line
 
