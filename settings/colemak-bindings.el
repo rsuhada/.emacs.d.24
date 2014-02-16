@@ -117,11 +117,11 @@
 (define-key my-keys-minor-mode-map (kbd "C-f") 'find-file)
 (define-key my-keys-minor-mode-map (kbd "C-d") 'transpose-chars)
 
-(define-key my-keys-minor-mode-map (kbd "M-p") 'ace-jump-char-mode)
+;; (define-key my-keys-minor-mode-map (kbd "M-p") 'ace-jump-char-mode)
 ;; (define-key my-keys-minor-mode-map (kbd "M-f") 'backward-word)
 
-(define-key my-keys-minor-mode-map (kbd "C-i") 'forward-word)
-(define-key my-keys-minor-mode-map (kbd "C-n") 'backward-word)
+(define-key my-keys-minor-mode-map (kbd "M-C-i") 'forward-word)
+(define-key my-keys-minor-mode-map (kbd "M-C-n") 'backward-word)
 (define-key my-keys-minor-mode-map (kbd "M-C-u") 'backward-paragraph)
 (define-key my-keys-minor-mode-map (kbd "M-C-e") 'forward-paragraph)
 
