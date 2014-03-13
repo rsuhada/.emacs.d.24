@@ -120,3 +120,7 @@
 ;; invert anki card
 (fset 'invcard
      [?\C-s ?: ?: ?\C-m ?\M-  ?\C-k backspace backspace ?\C-a ?\C-y ?  ?: ?: ?  ?\C-a ?\C-s ?\C-d ?\C-e ?\C-m ?\; ?\; return ?\M-s])
+
+;; remove useless lines from t moon reader+
+(fset 'anki-remove-lines
+   [?\C-s ?0 ?\C-q ?\C-j return ?\C-w ?\C-w ?\M-e ?\C-o ?\C-t ?\C-t])
